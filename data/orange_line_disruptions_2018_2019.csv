@@ -1,0 +1,132 @@
+date,type,line_impact,resolve_time,end_time
+2018-01-01,Incident,Entire Line,0:15:50,6:23:23 PM
+2018-01-07,Incident,Entire Line,0:26:12,3:45:02 PM
+2018-01-15,Incident,Segment,1:13:57,4:06:19 PM
+2018-01-20,Smoke,Segment,0:26:04,7:24:10 AM
+2018-01-24,Equipment,Segment,0:59:59,6:07:53 PM
+2018-01-27,Equipment,Segment,0:35:54,10:17:55 PM
+2018-02-02,Incident,Segment,1:17:55,4:12:54 PM
+2018-02-03,Incident,Segment,1:08:18,7:19:16 AM
+2018-02-04,Incident,Segment,0:15:54,5:48:50 PM
+2018-02-06,Incident,Segment,0:22:12,12:51:02 AM
+2018-02-11,Incident,Entire Line,0:08:08,11:50:58 PM
+2018-03-01,Incident,Segment,0:05:51,1:31:41 PM
+2018-03-03,Incident,Segment,0:11:59,12:16:36 PM
+2018-03-09,Incident,Segment,0:03:59,12:51:52 AM
+2018-03-10,Equipment,Segment,0:32:03,1:23:57 PM
+2018-03-13,Incident,Segment,0:01:26,4:15:45 PM
+2018-03-18,Incident,Segment,0:15:28,9:31:00 AM
+2018-03-26,Incident,Segment,0:15:52,11:55:17 PM
+2018-04-09,Equipment,Segment,1:50:01,12:27:09 PM
+2018-04-11,Smoke,Segment,1:05:31,8:08:39 AM
+2018-04-29,Incident,Segment,1:06:03,6:34:55 PM
+2018-04-29,N/A,One Station,0:25:01,7:01:51 PM
+2018-05-07,Incident,Segment,1:39:44,5:42:37 PM
+2018-05-08,Equipment,Segment,0:39:58,9:04:34 PM
+2018-05-09,Equipment,Segment,1:19:18,10:03:52 PM
+2018-05-11,Incident,Segment,0:24:20,12:40:55 PM
+2018-05-17,Incident,Segment,0:19:56,12:32:51 PM
+2018-06-12,Incident,Entire Line,0:14:24,12:54:07 PM
+2018-06-20,Equipment,Segment,0:08:00,12:23:29 PM
+2018-06-25,Smoke,Segment,0:09:49,4:09:26 PM
+2018-06-27,Incident,Segment,0:22:43,1:56:05 PM
+2018-06-28,Incident,Segment,0:53:35,6:10:55 PM
+2018-07-03,Smoke,Segment,0:18:03,6:36:42 AM
+2018-07-12,Incident,Segment,0:34:06,3:31:33 PM
+2018-07-16,Incident,Entire Line,0:37:51,11:40:17 PM
+2018-08-03,Equipment,Entire Line,0:18:00,11:30:15 PM
+2018-08-04,Incident,Segment,0:09:50,3:34:01 PM
+2018-08-22,Incident,Segment,0:33:59,11:39:42 PM
+2018-08-23,Incident,Segment,0:25:56,6:53:38 PM
+2018-08-31,N/A,One Station,0:07:20,9:17:01 PM
+2018-09-18,N/A,One Station,0:40:02,6:26:02 AM
+2018-09-19,Incident,Segment,0:24:00,8:45:53 PM
+2018-09-24,Incident,Segment,0:03:50,7:17:46 PM
+2018-09-25,Incident,Segment,0:09:56,10:37:42 PM
+2018-10-03,Incident,Entire Line,0:46:30,9:47:17 AM
+2018-10-03,Incident,Segment,1:08:18,10:55:35 AM
+2018-10-08,Incident,Segment,1:01:53,9:34:27 AM
+2018-10-18,Smoke,Segment,1:25:57,11:25:38 PM
+2018-10-19,N/A,One Station,0:19:00,10:26:36 PM
+2018-10-28,Incident,Segment,1:11:54,6:36:45 PM
+2018-10-31,Incident,Segment,0:05:57,11:50:39 AM
+2018-11-21,Incident,Segment,0:29:48,6:37:02 AM
+2018-11-25,Incident,Segment,0:21:57,1:36:58 AM
+2018-11-29,Equipment,Segment,1:29:58,9:06:52 PM
+2018-11-29,Incident,Segment,1:17:56,6:06:52 PM
+2018-12-07,Incident,Segment,1:45:48,4:11:28 PM
+2018-12-07,Smoke,Segment,0:46:00,10:03:24 PM
+2018-12-12,Incident,Segment,0:05:59,11:45:17 AM
+2019-01-04,Incident,Entire Line,0:42:43,2:29:31 PM
+2019-01-07,Incident,Segment,0:43:58,3:05:34 PM
+2019-01-09,Incident,Segment,1:57:49,10:19:25 AM
+2019-01-16,Incident,Segment,0:44:08,4:40:06 PM
+2019-01-18,Smoke,Segment,0:25:56,3:01:56 PM
+2019-01-27,Incident,Segment,0:13:57,9:39:45 AM
+2019-01-31,Smoke,Segment,0:21:53,10:04:32 PM
+2019-02-03,Incident,Entire Line,0:02:41,9:50:38 PM
+2019-02-04,Incident,Segment,1:13:53,12:54:23 PM
+2019-02-14,Incident,Entire Line,0:12:06,5:46:46 PM
+2019-02-14,Incident,Segment,0:25:48,6:12:34 PM
+2019-02-25,Incident,Segment,0:44:06,10:11:50 PM
+2019-03-09,Smoke,Entire Line,0:23:52,1:47:32 AM
+2019-03-17,Incident,Segment,1:03:14,11:27:24 AM
+2019-03-20,Incident,Segment,0:55:59,5:59:20 PM
+2019-03-21,Incident,Segment,0:25:55,2:47:18 PM
+2019-03-26,Incident,Segment,0:55:41,2:22:02 PM
+2019-04-04,Smoke,Segment,1:51:36,10:23:29 AM
+2019-04-06,Equipment,Segment,4:04:37,5:16:29 PM
+2019-04-07,Equipment,Segment,0:45:52,11:08:28 AM
+2019-04-16,Incident,Segment,1:15:59,2:20:19 PM
+2019-05-24,Equipment,Segment,1:51:54,8:32:09 PM
+2019-05-28,Incident,Entire Line,0:06:06,9:20:18 PM
+2019-05-28,Incident,Segment,1:09:53,10:30:11 PM
+2019-05-31,Smoke,Entire Line,0:20:04,12:12:40 AM
+2019-06-02,Incident,Entire Line,0:02:17,9:53:01 AM
+2019-06-02,Incident,Segment,0:17:33,10:10:34 AM
+2019-06-03,Incident,Segment,1:12:11,5:16:47 PM
+2019-06-05,Equipment,Segment,1:13:54,3:04:32 PM
+2019-06-06,N/A,One Station,0:03:13,9:32:57 AM
+2019-06-12,Incident,Segment,0:09:53,11:10:19 PM
+2019-06-22,Incident,Segment,0:11:56,6:38:45 PM
+2019-06-29,Equipment,Segment,0:19:57,4:40:46 PM
+2019-07-03,Incident,Segment,0:31:52,4:44:34 PM
+2019-07-04,Incident,Segment,0:31:56,2:44:33 PM
+2019-07-06,Incident,Segment,0:03:46,6:38:20 AM
+2019-07-17,Equipment,Segment,0:20:13,12:49:55 PM
+2019-08-21,Smoke,Segment,0:27:52,2:39:41 PM
+2019-09-05,Smoke,Segment,2:04:27,8:03:35 AM
+2019-09-14,Incident,Segment,0:14:18,12:14:22 AM
+2019-09-17,Smoke,Segment,0:58:14,10:22:08 AM
+2019-09-19,Equipment,Segment,0:36:12,7:59:51 PM
+2019-09-25,Incident,Segment,1:05:57,4:01:34 PM
+2019-09-26,Equipment,Segment,1:23:15,12:08:50 PM
+2019-09-27,N/A,One Station,0:08:26,7:30:12 PM
+2019-10-02,Incident,Entire Line,0:10:15,1:51:37 PM
+2019-10-02,Incident,Segment,0:43:12,2:34:49 PM
+2019-10-03,Smoke,Segment,1:38:31,7:30:12 AM
+2019-10-17,Water infiltrations,Segment,6:39:56,5:11:41 PM
+2019-10-20,Incident,Entire Line,0:07:22,10:03:29 PM
+2019-10-20,Incident,Segment,1:06:14,11:09:43 PM
+2019-10-23,Incident,Segment,1:42:15,2:48:08 PM
+2019-10-27,N/A,One Station,0:04:08,12:25:47 PM
+2019-10-30,Incident,Segment,2:22:50,7:56:44 AM
+2019-10-31,Incident,Segment,0:03:37,4:32:30 PM
+2019-10-31,N/A,One Station,0:17:30,4:59:14 PM
+2019-11-01,Incident,Segment,0:22:36,2:38:08 PM
+2019-11-04,Incident,Segment,1:59:56,7:45:22 PM
+2019-11-05,Incident,Segment,1:17:08,1:20:10 PM
+2019-11-06,Smoke,Entire Line,0:08:47,5:21:45 PM
+2019-11-08,Incident,Entire Line,0:20:10,8:46:37 PM
+2019-11-08,Incident,Segment,0:20:00,9:06:37 PM
+2019-11-14,Water infiltrations,Segment,5:58:42,12:28:18 PM
+2019-11-14,Water infiltrations,One Station,2:31:49,3:03:49 PM
+2019-11-18,Smoke,Segment,0:29:30,7:03:26 AM
+2019-11-18,Smoke,Entire Line,0:09:23,6:03:42 PM
+2019-11-18,Smoke,Segment,0:59:33,7:03:15 PM
+2019-11-28,Equipment,Segment,2:25:10,4:51:32 PM
+2019-11-27,N/A,One Station,2:03:04,10:45:50 PM
+2019-12-06,Incident,Segment,1:29:00,6:49:13 PM
+2019-12-08,Incident,Entire Line,0:01:02,3:17:11 PM
+2019-12-09,Incident,Segment,0:17:56,6:48:24 PM
+2019-12-14,N/A,One Station,0:20:43,9:46:56 AM

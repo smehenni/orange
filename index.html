@@ -11,9 +11,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
 
 	<style>
-		/* Font Style */
-
-		.imghead {display: flex; justify-content: center; padding-bottom: 50px;}
+		.imghead {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 50px;
+		}
 
 		span.author {
 			display: block;
@@ -32,44 +34,89 @@
 		h2,
 		h4,
 		span {
-			font-family: 'Karla', sans-serif; text-align: left;
+			font-family: 'Karla', sans-serif;
+			text-align: left;
 		}
 
-		h3{font-family: 'Karla', sans-serif; margin-top: 30px; text-align: center; font-weight: 700;}
+		b{font-weight: 700;}
 
-		h1{font-size:2.4em; line-height: 1.2em; font-weight: 700;}
-		h2{font-size:1.8em; line-height: 2em; margin-top: 50px; font-weight: 700;}
-		h3{font-size:1.4em; line-height: 1.6em; font-weight: 700;}
-		h4{font-size:1.2em;}
-		p{font-size:1.2em; line-height: 1.4em; font-weight: 400;}
+		a {
+			color: black;
+			background-color: #FFE9AE;
+			text-decoration: underline;
+		}
 
-		ul{
+		a:hover {
+			background-color: #FFDC7E;
+			text-decoration: underline;
+		}
+
+		h3 {
+			font-family: 'Karla', sans-serif;
+			margin-top: 30px;
+			text-align: center;
+			font-weight: 700;
+		}
+
+		h1 {
+			font-size: 2.4em;
+			line-height: 1.2em;
+			font-weight: 700;
+		}
+
+		h2 {
+			font-size: 1.8em;
+			line-height: 2em;
+			margin-top: 50px;
+			font-weight: 700;
+		}
+
+		h3 {
+			font-size: 1.4em;
+			line-height: 1.6em;
+			font-weight: 700;
+		}
+
+		h4 {
+			font-size: 1.2em;
+		}
+
+		p {
+			font-size: 1.2em;
+			line-height: 1.4em;
+			font-weight: 400;
+		}
+
+		ul {
 			padding: 0;
 			list-style-type: none;
 		}
 
-		li{font-size:1.2em; line-height: 1.4em; font-weight: 400;}
+		li {
+			font-size: 1.2em;
+			line-height: 1.4em;
+			font-weight: 400;
+		}
 
 		#circle {
-		      width: 15px;
-		      height: 15px;
-		      border-radius: 50%;
-					display: inline-block;
-					margin-right: 10px;
-		    }
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			display: inline-block;
+			margin-right: 10px;
+		}
 
-		#circle.line{
+		#circle.line {
 			background: #EA4335;
 		}
 
-		#circle.segment{
+		#circle.segment {
 			background: #FBBC04;
 		}
 
-		#circle.station{
+		#circle.station {
 			background: #A2C4C9;
 		}
-
 	</style>
 </head>
 
@@ -78,18 +125,19 @@
 		<div class="inner">
 			<div class="wrapper style1">
 				<div class="content">
-						<div class="12u textblock 12u$(medium)">
-						<div class="imghead"><img src="./assets/orangeline.png" width="300px" height="290px"/></div>
+					<div class="12u textblock 12u$(medium)">
+						<div class="imghead"><img src="./assets/orangeline.png" width="300px" height="290px" /></div>
 						<h1>Using Twitter data to visualize service disruptions on the STM’s Orange Line</h1>
 						<h2>1. Introduction</h2>
 						<p>
-							Unplanned service disruptions are happening frequently on metro lines in Montreal. These disruptions can be minor, affecting a single station for a few minutes, or can paralyse an entire line, forcing commuters to find alternatives to reach their destination. By looking at the Twitter feeds of the four STM metro lines, it is possible to view the history of service disruptions and analyze their impact on the network. <br><br>
-							For this project, I scraped the service alerts of the Orange Line on Twitter — going back to 1st January 2018 — in order to understand what are the main types of disruptions, their duration, and the sections of the metro line that were impacted.
+							Unplanned service disruptions are happening frequently on metro lines in Montreal. These disruptions can be minor, affecting a single station for a few minutes, or can paralyse an entire line, forcing commuters to find alternatives to reach their destination.
+							By looking at the Twitter feeds of the four STM metro lines, it is possible to view the history of service disruptions and analyze their impact on the network. <br><br> For this project, I scraped the service alerts of the Orange Line on
+							Twitter — going back to 1st January 2018 — in order to understand what are the main types of disruptions, their duration, and the sections of the metro line that were impacted.
 
 						</p>
 						<h2>2. Legend</h2>
 						<p>
-							<span class="legend" style="background-color: #FFE9AE;">2.1 Types of Service Disruptions</span><br><br>
+							<span class="legend" style="background-color: #FFE9AE;">2.1 Types of service disruptions</span><br><br>
 
 							<b>Equipment:</b> train breakdown, computer system failure, electrical equipment failure<br>
 							<b>Incident:</b> intervention of emergency services, injured or ill passenger, unauthorized person on the tracks, emergency brake activated<br>
@@ -104,14 +152,17 @@
 							<b>One Station:</b> unplanned closing of one metro station<br>
 						</p>
 						<h2>3. Charts</h2>
-							<ul>
-								<li><div id="circle" class="line"></div> Entire Line</li>
-								<li><div id="circle" class="segment"></div> Segment</li>
-								<li><div id="circle" class="station"></div> One Station</li><br>
-								<li><b>X axis:</b> Date of the disruption</li>
-								<li><b>Y axis:</b> Duration of the disruption (HH:MM:SS)</li><br>
-								<li>Mobile users: note that the interactive charts have been replaced by static images for compatibility reasons.</li>
-							</ul>
+						<ul>
+							<li>
+								<div id="circle" class="line"></div> Entire Line</li>
+							<li>
+								<div id="circle" class="segment"></div> Segment</li>
+							<li>
+								<div id="circle" class="station"></div> One Station</li><br>
+							<li><b>X axis:</b> Date of the disruption</li>
+							<li><b>Y axis:</b> Duration of the disruption (HH:MM:SS)</li><br>
+							<li>Mobile users: note that the interactive charts have been replaced by static images for compatibility reasons.</li>
+						</ul>
 					</div>
 					<div class="12u$ 12u$(large)">
 						<h3>2018 — A scatter plot of all service disruptions</h3>
@@ -155,16 +206,17 @@
 								Blabla à propos des stats
 							</p>
 
-						<h2>5. Methodology & Tools</h2>
-						<p>
-							Data was scraped from the <a href="https://twitter.com/stm_Orange" target="_blank">@stm_Orange</a> Twitter handle, and includes the period from 1st January 2018 to 14th December 2019. It was done with <a href="https://github.com/twintproject/twint" target="_blank">Twint</a>	, a Twitter scraping tool that does not use Twitter’s API (no rate limitations). Graphs were created in Google Sheets.
-						</p>
-						<h2>6. Data</h2>
-						<p>
-							You can download a clean dataset with all the service disruptions <a href="https://twitter.com/stm_Orange" target="_blank">here (CSV)</a>.
-						</p>
+							<h2>5. Methodology & Tools</h2>
+							<p>
+								Data was scraped from the <a href="https://twitter.com/stm_Orange" target="_blank">@stm_Orange</a> Twitter handle, and includes the period from 1st January 2018 to 14th December 2019. It was done with <a href="https://github.com/twintproject/twint"
+								  target="_blank">Twint</a> , a Twitter scraping tool that does not use Twitter’s API (no rate limitations). Graphs were created in Google Sheets.
+							</p>
+							<h2>6. Data</h2>
+							<p>
+								You can download a clean dataset with all the service disruptions <a href="https://twitter.com/stm_Orange" target="_blank">here (CSV)</a>.
+							</p>
 
-					</div>
+						</div>
 					</div>
 				</div>
 			</div>
