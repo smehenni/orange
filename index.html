@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Using Twitter data to visualize service disruptions on the STM’s Orange Line</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta data-rh="true" property="og:image" content="URL ICI (1200*)" />
+	<meta data-rh="true" name="twitter:image:src" content="URL ICI (1200*)" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+
+	<style>
+		/* Font Style */
+
+		.imghead {display: flex; justify-content: center; padding-bottom: 50px;}
+
+		span.author {
+			display: block;
+			width: 125px;
+			text-align: center;
+			background-color: #EBEBEB;
+			border-radius: 20px;
+			color: #989898;
+			margin-bottom: 50px;
+			font-size: 0.9em;
+		}
+
+		p,
+		li,
+		h1,
+		h2,
+		h4,
+		span {
+			font-family: 'Karla', sans-serif; text-align: left;
+		}
+
+		h3{font-family: 'Karla', sans-serif; margin-top: 30px; text-align: center; font-weight: 700;}
+
+		h1{font-size:2.4em; line-height: 1.2em; font-weight: 700;}
+		h2{font-size:1.8em; line-height: 2em; margin-top: 50px; font-weight: 700;}
+		h3{font-size:1.4em; line-height: 1.6em; font-weight: 700;}
+		h4{font-size:1.2em;}
+		p{font-size:1.2em; line-height: 1.4em; font-weight: 400;}
+
+		ul{
+			padding: 0;
+			list-style-type: none;
+		}
+
+		li{font-size:1.2em; line-height: 1.4em; font-weight: 400;}
+
+		#circle {
+		      width: 15px;
+		      height: 15px;
+		      border-radius: 50%;
+					display: inline-block;
+					margin-right: 10px;
+		    }
+
+		#circle.line{
+			background: #EA4335;
+		}
+
+		#circle.segment{
+			background: #FBBC04;
+		}
+
+		#circle.station{
+			background: #A2C4C9;
+		}
+
+	</style>
+</head>
+
+<body>
+	<section id="main">
+		<div class="inner">
+			<div class="wrapper style1">
+				<div class="content">
+						<div class="12u textblock 12u$(medium)">
+						<div class="imghead"><img src="./assets/orangeline.png" width="300"/></div>
+						<h1>Using Twitter data to visualize service disruptions on the STM’s Orange Line</h1>
+						<h2>1. Introduction</h2>
+						<p>
+							Unplanned service disruptions are happening frequently on metro lines in Montreal. These disruptions can be minor, affecting a single station for a few minutes, or can paralyse an entire line, forcing commuters to find alternatives to reach their destination. By looking at the Twitter feeds of the four STM metro lines, it is possible to view the history of service disruptions and analyze their impact on the network. <br><br>
+							For this project, I scraped the service alerts of the Orange Line on Twitter — going back to 1st January 2018 — in order to understand what are the main types of disruptions, their duration, and the sections of the metro line that were impacted.
+
+						</p>
+						<h2>2. Legend</h2>
+						<p>
+							<span class="legend" style="background-color: #FFE9AE;">2.1 Types of Service Disruptions</span><br><br>
+
+							<b>Equipment:</b> train breakdown, computer system failure, electrical equipment failure<br>
+							<b>Incident:</b> intervention of emergency services, injured or ill passenger, unauthorized person on the tracks, emergency brake activated<br>
+							<b>Smoke:</b> presence of smoke in the station/tunnel<br>
+							<b>Water infiltration:</b> infiltration requiring a power cut<br>
+							<b>N/A:</b> unspecified<br><br>
+
+							<span class="legend" style="background-color: #FFE9AE;">2.2 Impact on the line</span><br><br>
+
+							<b>Entire Line:</b> line shut down between Côte-Vertu and Henri-Bourassa/Montmorency<br>
+							<b>Segment:</b> shut down only on a segment, e.g. between Côte-Vertu and Lionel-Groulx<br>
+							<b>One Station:</b> unplanned closing of one metro station<br>
+						</p>
+						<h2>3. Charts</h2>
+							<ul>
+								<li><div id="circle" class="line"></div> Entire Line</li>
+								<li><div id="circle" class="segment"></div> Segment</li>
+								<li><div id="circle" class="station"></div> One Station</li><br>
+								<li><b>X axis:</b> Date of the disruption</li>
+								<li><b>Y axis:</b> Duration of the disruption (HH:MM:SS)</li><br>
+								<li>Mobile users: note that the interactive charts have been replaced by static images for compatibility reasons.</li>
+							</ul>
+					</div>
+					<div class="12u$ 12u$(large)">
+						<h3>2018 — A scatter plot of all service disruptions</h3>
+						<img class="mobile" src="./assets/chart-2018.png" />
+						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=162047596&amp;format=interactive"></iframe>
+						<h3>2019 — A scatter plot of all service disruptions</h3>
+						<img class="mobile" src="./assets/chart-2019.png" />
+						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=604242499&amp;format=interactive"></iframe>
+						<h3>2018 & 2019 — Impact & duration per month</h3>
+						<img class="mobile" src="./assets/chart-monthly.png" />
+						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=1963586433&amp;format=interactive"></iframe>
+					</div>
+					<div class="12u 12u$(medium)">
+						<h3><u>Number</u> of disruptions and their impact on the line <br><i>(sum for the year, by type)</i></h3>
+					</div>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+							<h3>2018</h3>
+							<img class="tables" src="./assets/table-count-2018.png" />
+						</div>
+						<div class="6u 12u$(medium)">
+							<h3>2019</h3>
+							<img class="tables" src="./assets/table-count-2019.png" />
+						</div>
+					</div>
+					<div class="12u 12u$(medium)">
+						<h3><u>Total duration</u> of disruptions and their impact on the line<br><i>(sum for the year, by type)</i></h3>
+					</div>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+							<h3>2018</h3>
+							<img class="tables" src="./assets/table-duration-2018.png" />
+						</div>
+						<div class="6u 12u$(medium)">
+							<h3>2019</h3>
+							<img class="tables" src="./assets/table-duration-2019.png" />
+						</div>
+						<div class="12u textblock 12u$(medium)">
+							<h2>4. Overview</h2>
+							<p>
+								Blabla à propos des stats
+							</p>
+
+						<h2>5. Methodology & Tools</h2>
+						<p>
+							Data was scraped from the <a href="https://twitter.com/stm_Orange" target="_blank">@stm_Orange</a> Twitter handle, and includes the period from 1st January 2018 to 14th December 2019. It was done with <a href="https://github.com/twintproject/twint" target="_blank">Twint</a>	, a Twitter scraping tool that does not use Twitter’s API (no rate limitations). Graphs were created in Google Sheets.
+						</p>
+						<h2>6. Data</h2>
+						<p>
+							You can download a clean dataset with all the service disruptions <a href="https://twitter.com/stm_Orange" target="_blank">here (CSV)</a>.
+						</p>
+
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
