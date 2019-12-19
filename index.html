@@ -17,17 +17,6 @@
 			padding-bottom: 50px;
 		}
 
-		span.author {
-			display: block;
-			width: 125px;
-			text-align: center;
-			background-color: #EBEBEB;
-			border-radius: 20px;
-			color: #989898;
-			margin-bottom: 50px;
-			font-size: 0.9em;
-		}
-
 		p,
 		li,
 		h1,
@@ -64,6 +53,19 @@
 			font-weight: 700;
 		}
 
+		a.author {
+			font-size: 0.6em;
+			line-height: 1em;
+			font-weight: 400;
+			background-color: #FFA452;
+			text-decoration: underline;
+			color: black;
+		}
+
+		a.author:hover {
+			background-color: #FF7900;
+		}
+
 		h2 {
 			font-size: 1.8em;
 			line-height: 2em;
@@ -98,6 +100,13 @@
 			font-weight: 400;
 		}
 
+		span.subtable{
+			font-size: 1em;
+			line-height: 1.6em;
+			font-weight: 400;
+			font-style: italic;
+		}
+
 		#circle {
 			width: 15px;
 			height: 15px;
@@ -127,12 +136,14 @@
 				<div class="content">
 					<div class="12u textblock 12u$(medium)">
 						<div class="imghead"><img src="./assets/orangeline.png" width="300px" height="290px" /></div>
-						<h1>Using Twitter data to visualize service disruptions on the STM’s Orange Line</h1>
+						<h1>Using Twitter data to visualize service disruptions on the STM’s Orange Line<br><a class="author" href="http://mehenni.cargo.site/" target="_blank">by Sam Mehenni</a></h1>
 						<h2>1. Introduction</h2>
 						<p>
 							Unplanned service disruptions are happening frequently on metro lines in Montreal. These disruptions can be minor, affecting a single station for a few minutes, or can paralyse an entire line, forcing commuters to find alternatives to reach their destination.
-							By looking at the Twitter feeds of the four STM metro lines, it is possible to view the history of service disruptions and analyze their impact on the network. <br><br> For this project, I scraped the service alerts of the Orange Line on
-							Twitter — going back to 1st January 2018 — in order to understand what are the main types of disruptions, their duration, and the sections of the metro line that were impacted.
+							By looking at the Twitter feeds of the four STM metro lines, it is possible to view the history of service disruptions and analyze their impact on the network.<br><br>For this project, I scraped the service alerts of the Orange Line on
+							Twitter — <b>2386 tweets, going back to 1st January 2018</b> — in order to understand what are the main types of disruptions, their duration, and the sections of the metro line that were impacted.<br><br>
+							A typical disruption starts with the first “Shutdown” tweet, and is considered resolved when a “Normal Service Métro” tweet related to that same disruption has been shared. The calculated duration is the timestamp difference between the two tweets.
+
 
 						</p>
 						<h2>2. Legend</h2>
@@ -161,22 +172,23 @@
 								<div id="circle" class="station"></div> One Station</li><br>
 							<li><b>X axis:</b> Date of the disruption</li>
 							<li><b>Y axis:</b> Duration of the disruption (HH:MM:SS)</li><br>
-							<li>Mobile users: note that the interactive charts have been replaced by static images for compatibility reasons.</li>
+							<li>Mobile users: note that the interactive charts have been replaced by static images for compatibility reasons.<br><br></li>
 						</ul>
 					</div>
 					<div class="12u$ 12u$(large)">
-						<h3>2018 — A scatter plot of all service disruptions</h3>
+						<h3>(F.1) 2018 — A scatter plot of all service disruptions</h3>
 						<img class="mobile" src="./assets/chart-2018.png" />
 						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=162047596&amp;format=interactive"></iframe>
-						<h3>2019 — A scatter plot of all service disruptions</h3>
+						<h3>(F.2) 2019 — A scatter plot of all service disruptions</h3>
 						<img class="mobile" src="./assets/chart-2019.png" />
 						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=604242499&amp;format=interactive"></iframe>
-						<h3>2018 & 2019 — Impact & duration per month</h3>
+						<h3>(F.3) 2018 & 2019 — Impact & duration per month</h3>
 						<img class="mobile" src="./assets/chart-monthly.png" />
 						<iframe seamless frameborder="0" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThBMzBdurOJyJVONwk9ZO9cJnhSMjzAP3RWXjBPbJ7OkMZ5P46_1Msmencc-wXDD_QDmOWq5yy-ja_/pubchart?oid=1963586433&amp;format=interactive"></iframe>
 					</div>
 					<div class="12u 12u$(medium)">
-						<h3><u>Number</u> of disruptions and their impact on the line <br><i>(sum for the year, by type)</i></h3>
+						<h3>(F.4) <u> Number</u> of disruptions and their impact on the line<br>
+						<span class="subtable">(sum for the year, by type)</span></h3>
 					</div>
 					<div class="row 200%">
 						<div class="6u 12u$(medium)">
@@ -189,7 +201,8 @@
 						</div>
 					</div>
 					<div class="12u 12u$(medium)">
-						<h3><u>Total duration</u> of disruptions and their impact on the line<br><i>(sum for the year, by type)</i></h3>
+						<h3>(F.5) <u>Total duration</u> of disruptions and their impact on the line<br>
+						<span class="subtable">(sum for the year, by type)</span></h3>
 					</div>
 					<div class="row 200%">
 						<div class="6u 12u$(medium)">
@@ -201,15 +214,19 @@
 							<img class="tables" src="./assets/table-duration-2019.png" />
 						</div>
 						<div class="12u textblock 12u$(medium)">
-							<h2>4. Overview</h2>
-							<p>
-								Blabla à propos des stats
-							</p>
+							<h2>4. Findings</h2>
+
+								<p>Looking at Figs. 1 and 2, it is possible to quickly see that in 2018, no service disruption impacted the Orange Line for more than two hours. However, in 2019, no less than five major disruptions forced the shutdown of a segment of the line for more than two hours — including the notorious water infiltration issue that caused the closing of the stations between Lionel-Groulx and Berri-UQAM for almost six hours on 14 November 2019. <br><br></p>
+								<div class="imghead"><img src="./assets/square-vic.gif" width="600px" /></div>
+<p>
+	On the Fig. 3, we can see that the monthly total of durations is decreasing in the summer period, and increasing during the fall. The months with the highest number of disruptions in the past two years are March 2018 (7), October 2019 (8) and November 2019 (8). <br><br>
+	As regards to the types of disruptions, incidents — requiring the intervention of emergency services, or when an unauthorized person is on the tracks — represent the majority of the annual total. It is interesting to note that these incidents affected the entire Orange Line for 2h28 cumulatively in 2018, but only 1h01 in 2019. However, some segments of the line were clearly more impacted in 2019, for a cumulative total of 27h54, compared to 19h50 in 2018. Smoke-related disruptions — on the platform/in the tunnel — also increased for the study period, from 4h11 in 2018 to 9h17 in 2019.  
+</p>
 
 							<h2>5. Methodology & Tools</h2>
 							<p>
-								Data was scraped from the <a href="https://twitter.com/stm_Orange" target="_blank">@stm_Orange</a> Twitter handle, and includes the period from 1st January 2018 to 14th December 2019. It was done with <a href="https://github.com/twintproject/twint"
-								  target="_blank">Twint</a> , a Twitter scraping tool that does not use Twitter’s API (no rate limitations). Graphs were created in Google Sheets.
+								Data was scraped from the <a href="https://twitter.com/stm_Orange" target="_blank">@stm_Orange</a> Twitter handle, and includes the period from 1st January 2018 to 14th December 2019. It was done using <a href="https://github.com/twintproject/twint"
+								  target="_blank">Twint</a> , a scraping tool that does not use Twitter’s API (no rate limitations). Graphs were created in Google Sheets.
 							</p>
 							<h2>6. Data</h2>
 							<p>
